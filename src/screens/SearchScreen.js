@@ -17,14 +17,13 @@ const SearchScreen = () => {
   }
 
   return (
-    <View>
+    <>
       <SearchBar
         term={term}
         onTermChange={setTerm}
         onTermSubmit={() => searchApi(term)}
       />
       {errorMessage !== '' ? <Text>{errorMessage}</Text> : null}
-      <Text>We have found {results.length} results!</Text>
       <ScrollView>
         <ResultsList
           title='Cost Effective'
@@ -36,7 +35,7 @@ const SearchScreen = () => {
           results={filterResultsByPrice('$$$')}
         />
       </ScrollView>
-    </View>
+    </>
   )
 }
 
