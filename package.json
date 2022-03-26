@@ -22,7 +22,7 @@
     "react-navigation": "^4.2.2",
     "react-navigation-stack": "^2.2.3",
     "mem": ">=4.0.0",
-    "minimist": ">=1.2.3"
+    "minimist": ">=1.2.6"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.0.0",
